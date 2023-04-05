@@ -1,0 +1,8 @@
+// write a program to find the numbers  by the condition i<=25 
+#include <stdio.h>
+   int main()
+  {
+    int i;
+    for(i=1;i>=10;i--)
+    printf("%d\n",i);
+}
