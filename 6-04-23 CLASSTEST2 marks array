@@ -1,0 +1,33 @@
+//marks of a student in four subjets 
+#include <stdio.h>
+int main()
+{
+    int marks,a;
+    printf("Enter your marks ");
+    scanf("%d",&marks);
+    if(marks<0 || marks>100)
+    {
+        printf("Wrong Entry");
+    }
+    else if(marks>=50)
+    {
+    	printf("Grade distiction");
+	}
+    else if(marks>=50 && marks<60)
+    {
+        printf("Grade reappear");
+    }
+    else if(marks>=60 && marks<75)
+    {
+        printf("Grade firstclass");
+    }
+    else if(marks>=75 && marks<100)
+    {
+        printf("Grade distrintics");
+    }
+   
+    else
+    {
+        printf("Grade fail");
+    }
+}
