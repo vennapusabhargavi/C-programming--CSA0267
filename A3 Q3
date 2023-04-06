@@ -1,0 +1,35 @@
+// TO FIND THE GCD 0F TWO NUMBERS USING RECURSION
+#include<stdio.h>
+
+int gcd(int a,int b);
+
+int main()
+{
+    int a,b,l,temp;
+    printf("Enter two numbers :\n");
+    scanf("%d%d",&a,&b);
+    if(a<b)
+    {
+        temp=a;
+        a=b;
+        b=temp;
+    }
+    l=gcd(a,b);
+    printf("GCD = %i\nLCM = %i",l,a*b/l);
+
+    return 0;
+}
+
+int gcd(int a,int b)
+{
+    static int c;
+    c=a%b;
+    a=b;
+    b=c;
+    if(c!=0)
+    {
+        gcd(a,b);
+    }
+    else
+        return a;
+}
